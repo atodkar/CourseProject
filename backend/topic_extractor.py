@@ -17,6 +17,7 @@ class TopicExtractor(object):
     """
 
     def __init__(self):
+        # download and use stopwords
         nltk.download('stopwords')
         self.stop_words = stopwords.words('english')
 
@@ -79,8 +80,6 @@ class TopicExtractor(object):
 
         # using bigram language model for this modelling
         bigram = gensim.models.Phrases(data_words, min_count=10, threshold=500)
-
-        # Faster way to get a sentence clubbed as a trigram/bigram
         bigram_mod = gensim.models.phrases.Phraser(bigram)
 
         # Remove Stopwords
