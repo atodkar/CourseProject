@@ -1,0 +1,28 @@
+.mainContent{
+      font-size: calc(10px + 1vmin);
+}
+
+.newsDateInput{
+
+}
+
+.newsDateLabel{
+
+}
+
+.newsContentDiv {
+    font-size: calc(10px + 0.75vmin);
+    margin: 2em;
+    color: #c9e5ff;
+
+}
+
+.expandedText{
+    overflow-wrap: break-word;
+    overflow: unset;
+}
+
+.submitRelevance{
+    min-height: 3em;
+    background-color: cornflowerblue;
+}
