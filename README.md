@@ -7,6 +7,12 @@ This particular exercise targets the same use case using LDA (Latent Dirichlet A
 ## Team
 **TeamAnand** is a solo participant and has implemented the entire project alone.
 
+## Video Presentation
+
+https://youtu.be/dPRY_QH6NWI
+
+This is also uploaded to the Github repository.
+
 ## Functional Design
 
 The functionality includes mainly two components. 
