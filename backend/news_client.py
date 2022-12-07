@@ -36,7 +36,7 @@ class NewsClient(object):
                                        params=req)
         # Check Status of Request, if no response then return empty response. This is to avoid any issues with other
         # two.
-        print(resp.content)
+        # print(resp.content)
         if resp.status_code != requests.codes.ok:
             return []
 
@@ -121,7 +121,7 @@ class NewsClient(object):
                                        params=req)
         # Check Status of Request, if no response then return empty response. This is to avoid any issues with other
         # two.
-        print(resp.content)
+        # print(resp.content)
         if resp.status_code != requests.codes.ok:
             return []
 

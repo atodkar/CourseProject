@@ -69,9 +69,11 @@ function Main(props) {
         }).then(
             (result) => {
                 console.log("Response from server: ", result);
+                alert("Response submitted successfully!");
            },
             (error) => {
                 console.log("Error from server: ", error);
+                alert("Error submitting the relevance feedback." + error);
             }
           );
 

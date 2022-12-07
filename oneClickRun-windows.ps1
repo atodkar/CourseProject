@@ -1,7 +1,6 @@
-#!/usr/bin/env sh
-
 pip install -r ./backend/requirements.txt
-cd frontend && npm install
+cd frontend
+npm install
 npm run build
 cd .. # go back to the project root directory
 

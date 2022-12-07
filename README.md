@@ -1,7 +1,7 @@
 # Trend Analysis using news articles
 
 ## Introduction
-The idea of this project is to find trends on the market as well as business. Many times it is important to evaluate the market situation in just few sentences to get the high level idea of whether the market was positive or negative on the selected date. 
+The idea of this project is to find trends in the market and business. Many times it is important to evaluate the market situation in just few sentences to get the high level idea of whether the market was positive or negative on the selected date. 
 This particular exercise targets the same use case using LDA (Latent Dirichlet Analysis) for topic modelling.
 
 ## Team
@@ -77,7 +77,7 @@ On Javascript side, below tasks are done-
 3. Based on user's relevance selection, submit the relevance feedback to server
 
 ## System requirements
-This application can be executed on Windows or Linux. The application is tested on Windows and the shell file is executed on Windows using Bash shell.
+This application can be executed on Windows or Linux. 
 
 ### Software list
 Code is tested on below versions - 
@@ -89,16 +89,19 @@ Code is tested on below versions -
 Run below commands to install all required packages for this project execution-
 
 ```shell
+# In case if the script is being run in Ubuntu/Linux, enable below line. This is required in order to install pattern.
+sudo apt install default-libmysqlclient-dev
 pip install -r ./backend/requirements.txt
 cd frontend && npm install
 npm run build
 cd .. # go back to the project root directory
 ```
-First command installs all python libraries. the description of all libraries is given in libraries section.
+
+First command installs all python libraries. The description of all libraries is given in libraries section.
 We also need to install spacy language pack download with below command-
 
 ```shell
-python -m spacy download en_core_web_sm
+python3 -m spacy download en_core_web_sm
 ```
 
 ## Run the project
@@ -106,11 +109,14 @@ After following the installation instructions, continue with this section in ord
 
 ```shell
 cd backend
-python ./app.py
+python3 ./app.py
 ```
+
+Additional finding on Windows is the python version 3.10 needs to be referred as **python**. So the respective changes needs to be done in commands at both sides.
+
 Above commands should run the python flask webserver and the URL http://localhost:5000 should be available to open on the browser.
 
-The project also contains the **oneClickRun.sh** file which should help run the entire application just by executing one file.
+The project also contains the **oneClickRun-linux.sh** and **oneClickRun-windows.ps1** file which should help run the entire application just by executing one file.
 
 Open the browser UI and select any date from the near past. browser should fetch the top topics along with the articles for that date.
 
@@ -139,5 +145,7 @@ Below are the required tasks and respective time spent on the activities
 	b. Receive feedback on articles from user and use it as a validation - 30 minutes
 4. Algorithm of LDA end to end implementation - 5 hours
 5. Prepare React based UI to show a page which will call API and show top trending articles - 5 hours
-6. Documentation and presentation - 4 hours
+6. Documentation and presentation - 5 hours
 
+## References
+https://towardsdatascience.com/topic-modelling-in-python-with-spacy-and-gensim-dc8f7748bdbf
