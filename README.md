@@ -98,6 +98,7 @@ cd .. # go back to the project root directory
 ```
 
 First command installs all python libraries. The description of all libraries is given in libraries section.
+
 We also need to install spacy language pack download with below command-
 
 ```shell
